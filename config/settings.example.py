@@ -6,7 +6,7 @@
 AI_MODEL_PROVIDER = "gemini"  # "gemini" hoặc "ollama"
 
 # Gemini API configuration
-GEMINI_API_KEY = ""  # API key từ https://aistudio.google.com/
+GEMINI_API_KEY = "AQ.Ab8RN6Jce5PEsGK6PFqeyJgTb3ICTTlTt0T9_GuuHxAlum2NNA"  # API key từ https://aistudio.google.com/
 
 # Ollama local configuration (nếu dùng model local)
 OLLAMA_BASE_URL = "http://localhost:11434"
@@ -66,14 +66,14 @@ SOCIAL_PLATFORMS = {
 
 # ==================== EMAIL/SMTP CONFIG ====================
 SMTP_CONFIG = {
-    "smtp_server": "",        # Ví dụ: "smtp.office365.com" hoặc "smtp.gmail.com"
-    "smtp_port": 587,         # 587 (TLS) hoặc 465 (SSL)
+    "smtp_server": "mail.eascs.com.vn",        # Ví dụ: "smtp.office365.com" hoặc "smtp.gmail.com"
+    "smtp_port": 465,         # 587 (TLS) hoặc 465 (SSL)
     "use_tls": True,
-    "username": "",           # Email người gửi @eascs.com.vn
-    "password": "",           # Mật khẩu hoặc App Password
-    "sender_email": "",       # Email gửi đi @eascs.com.vn
-    "sender_name": "EAVN",    # Tên hiển thị
-    "default_reply_to": "",   # Email reply mặc định
+    "username": "thanh.do@eascs.com.vn",           # Email người gửi @eascs.com.vn
+    "password": "Th@nh3010",           # Mật khẩu hoặc App Password
+    "sender_email": "thanh.do@eascs.com.vn",       # Email gửi đi @eascs.com.vn
+    "sender_name": "EAVN_Solution",    # Tên hiển thị
+    "default_reply_to": "thanh.do@eascs.com.vn",   # Email reply mặc định
 }
 
 # ==================== CONTENT CONFIG ====================
