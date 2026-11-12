@@ -1,0 +1,29 @@
+# AI & LLM
+google-generativeai>=0.3.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Social Media APIs
+facebook_sdk>=3.1.0
+linkedin-api>=2.0.0
+selenium>=4.15.0
+
+# Email
+smtplib  # built-in
+email>=4.0.0
+python-dotenv>=1.0.0
+
+# Scheduler
+schedule>=1.2.0
+(APScheduler>=3.10.0  # optional, for more advanced scheduling)
+
+# Utilities
+python-dateutil>=2.8.0
+Pillow>=10.0.0  # For logo handling
+
+# For RSS/news
+feedparser>=6.0.0
+
+# Web scraping (optional, for more robust scraping)
+httpx>=0.25.0
