@@ -1,32 +1,12 @@
-import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
-# ==================== AI MODEL CONFIG ====================
-AI_MODEL_PROVIDER = os.getenv("AI_MODEL_PROVIDER", "gemini")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-
-# ==================== EMAIL/SMTP CONFIG ====================
-SMTP_CONFIG = {
-    "smtp_server": os.getenv("SMTP_SERVER", ""),
-    "smtp_port": int(os.getenv("SMTP_PORT", "587")),
-    "use_tls": os.getenv("SMTP_USE_TLS", "True").lower() == "true",
-    "username": os.getenv("SMTP_USERNAME", ""),
-    "password": os.getenv("SMTP_PASSWORD", ""),
-    "sender_email": os.getenv("SENDER_EMAIL", ""),
-    "sender_name": os.getenv("SENDER_NAME", "EAVN"),
-    "default_reply_to": os.getenv("REPLY_TO_EMAIL", ""),
-}# Content Generator Settings
+# Content Generator Settings
 # Copy this file to settings.py and fill in your actual values
 
 # ==================== AI MODEL CONFIG ====================
 # Lựa chọn model: "gemini" hoặc "ollama"
-#AI_MODEL_PROVIDER = "gemini"  # "gemini" hoặc "ollama"
+AI_MODEL_PROVIDER = "gemini"  # "gemini" hoặc "ollama"
 
 # Gemini API configuration
-#GEMINI_API_KEY = "AQ.Ab8RN6Jce5PEsGK6PFqeyJgTb3ICTTlTt0T9_GuuHxAlum2NNA"  # API key từ https://aistudio.google.com/
+GEMINI_API_KEY = "AQ.Ab8RN6Jce5PEsGK6PFqeyJgTb3ICTTlTt0T9_GuuHxAlum2NNA"  # API key từ https://aistudio.google.com/
 
 # Ollama local configuration (nếu dùng model local)
 OLLAMA_BASE_URL = "http://localhost:11434"
@@ -85,16 +65,16 @@ SOCIAL_PLATFORMS = {
 }
 
 # ==================== EMAIL/SMTP CONFIG ====================
-#SMTP_CONFIG = {
- #   "smtp_server": "mail.eascs.com.vn",        # Ví dụ: "smtp.office365.com" hoặc "smtp.gmail.com"
-  #  "smtp_port": 465,         # 587 (TLS) hoặc 465 (SSL)
-   # "use_tls": True,
-    #"username": "thanh.do@eascs.com.vn",           # Email người gửi @eascs.com.vn
-    #"password": "Th@nh3010",           # Mật khẩu hoặc App Password
-    #"sender_email": "thanh.do@eascs.com.vn",       # Email gửi đi @eascs.com.vn
-   # "sender_name": "EAVN_Solution",    # Tên hiển thị
-  #  "default_reply_to": "thanh.do@eascs.com.vn",   # Email reply mặc định
-#}
+SMTP_CONFIG = {
+   "smtp_server": "mail.eascs.com.vn",        # Ví dụ: "smtp.office365.com" hoặc "smtp.gmail.com"
+  "smtp_port": 465,         # 587 (TLS) hoặc 465 (SSL)
+ "use_tls": True,
+   "username": "thanh.do@eascs.com.vn",           # Email người gửi @eascs.com.vn
+  "password": "Th@nh3010",           # Mật khẩu hoặc App Password
+    "sender_email": "thanh.do@eascs.com.vn",       # Email gửi đi @eascs.com.vn
+   "sender_name": "EAVN_Solution",    # Tên hiển thị
+   "default_reply_to": "thanh.do@eascs.com.vn",   # Email reply mặc định
+}
 
 # ==================== CONTENT CONFIG ====================
 # Email setting
